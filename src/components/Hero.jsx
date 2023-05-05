@@ -1,9 +1,11 @@
+import { logo } from "../assets";
+
 const Hero = () => {
   return (
     <header className="w-full flex justify-center items-center flex-col">
       <nav className="flex justify-between items-center w-full mb-10 pt-3">
         <img
-          src="src/assets/sum-ai1.png"
+          src={"src/assets/sum-ai1.png"}
           alt="summarizer logo"
           className="h-full w-4/12 object-contain"
         />

@@ -6,6 +6,17 @@
   Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
 */
 
+.main1 {
+  width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  padding: 120px 24px 160px 24px;
+  pointer-events: none;
+  background-image: url("/src/assets/bck1.jpeg");
+}
+
 .main {
   width: 100vw;
   min-height: 100vh;
@@ -79,12 +90,24 @@
   @apply rounded-full border border-black bg-black py-1.5 px-5 text-sm text-white transition-all hover:bg-white hover:text-black;
 }
 
+.green_btn {
+  @apply rounded-full border border-green-600 bg-green-500 py-1.5 px-5 text-sm text-white transition-all hover:bg-green-300 hover:text-orange-500;
+}
+
+.red_btn {
+  @apply rounded-full border border-red-600 bg-red-500 py-1.5 px-5 text-sm text-white transition-all hover:bg-red-400 hover:text-yellow-300;
+}
+
 .head_text {
   @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl text-center;
 }
 
-.orange_gradient {
-  @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
+.gpt_gradient {
+  @apply bg-gradient-to-r from-purple-500 via-teal-600 to-green-500 bg-clip-text text-transparent;
+}
+
+.gpt1_gradient {
+  @apply bg-gradient-to-r from-red-600 via-orange-500 to-blue-400 bg-clip-text text-transparent;
 }
 
 .desc {
